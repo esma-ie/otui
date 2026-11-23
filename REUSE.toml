@@ -1,0 +1,20 @@
+version = 1
+
+[[annotations]]
+path = ["**"]
+SPDX-FileCopyrightText = "2026 Energy Systems Modelling Analytics Ltd (ESMA)"
+SPDX-License-Identifier = "AGPL-3.0-or-later"
+
+# The ESMA logo (primary, all-white and all-green versions) is not covered by otui's licence.
+[[annotations]]
+path = ["frontend/src/assets/esma-logo-*.svg"]
+precedence = "override"
+SPDX-FileCopyrightText = "2025 Energy Systems Modelling Analytics Ltd (ESMA)"
+SPDX-License-Identifier = "LicenseRef-ESMA-Trademark"
+
+# README screenshots of demo12 (TIMES_Demo, CC BY 4.0, IEA-ETSAP) in otui: they show the ESMA logo
+[[annotations]]
+path = ["docs/images/*.png"]
+precedence = "override"
+SPDX-FileCopyrightText = "2026 Energy Systems Modelling Analytics Ltd (ESMA)"
+SPDX-License-Identifier = "AGPL-3.0-or-later AND LicenseRef-ESMA-Trademark"

@@ -1,0 +1,19 @@
+{
+  "name": "otui",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/julialang/devcontainer-features/julia:1": { "channel": "1.13" },
+    "ghcr.io/devcontainers/features/node:1": { "version": "lts" }
+  },
+  "hostRequirements": { "cpus": 4, "memory": "16gb", "storage": "32gb" },
+  "containerEnv": { "OTUI_TIMESJL": "pinned" },
+  "onCreateCommand": "bash .devcontainer/setup.sh",
+  "postAttachCommand": "bash .devcontainer/serve.sh",
+  "forwardPorts": [8642],
+  "portsAttributes": {
+    "8642": { "label": "otui", "onAutoForward": "openBrowser" }
+  },
+  "customizations": {
+    "vscode": { "settings": { "workbench.startupEditor": "none" } }
+  }
+}

@@ -1,0 +1,21 @@
+# otui's Julia environment: TIMES.jl at a pinned commit (its DD reader, M1.4,
+# and its run chain with HiGHS, as in TIMES.jl's scripts/run_dd.jl).
+# otui copies this folder to its data directory and instantiates it there
+# (`otui julia-setup`). To use a local TIMES.jl clone instead, set
+# OTUI_TIMESJL_PATH before running julia-setup.
+
+[deps]
+HiGHS = "87dc4568-4c63-4d18-b0c0-bb2238e4078b"
+JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+TIMES = "2625f1fd-8477-4c68-a6fe-e00cc6f61c53"
+TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
+
+[sources]
+TIMES = {url = "https://github.com/esma-ie/timesjl.git", rev = "b98cb31ec9a8f31ab3ccba9018620a085f85b007"}
+
+[compat]
+HiGHS = "1"
+JSON = "0.21, 1"
+JuMP = "1"
+julia = "1.11"

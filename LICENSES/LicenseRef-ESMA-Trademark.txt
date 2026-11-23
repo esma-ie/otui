@@ -1,0 +1,7 @@
+The ESMA name and logo are trademarks of Energy Systems Modelling Analytics Ltd
+(ESMA). All rights reserved.
+
+They are not licensed under the GNU Affero General Public License or any other
+licence that applies to this repository. You may show the logo unchanged in
+otui as distributed by ESMA. Any other use, including in modified versions or
+forks of otui, requires ESMA's written permission.

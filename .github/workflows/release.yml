@@ -1,0 +1,68 @@
+name: release
+
+# A published GitHub release (tag vX.Y.Z) builds the wheel, with the browser app and its licence
+# notices, attaches it to the release and publishes it to PyPI through trusted publishing (no
+# stored token). Only the wheel is published: the source tree does not carry the built app.
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  wheel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+        working-directory: frontend
+      - run: npm run build
+        working-directory: frontend
+      - uses: astral-sh/setup-uv@v6
+      - name: Version matches the tag
+        run: |
+          v=$(uv version --short)
+          test "v$v" = "$GITHUB_REF_NAME" || { echo "pyproject says $v, tag is $GITHUB_REF_NAME"; exit 1; }
+      - run: uv build --wheel --out-dir dist
+      - name: Wheel carries the app and the notices
+        run: python -c "import zipfile,glob; n=zipfile.ZipFile(glob.glob('dist/*.whl')[0]).namelist(); need=['otui/web/index.html','otui/web/THIRD-PARTY-NOTICES.txt']; miss=[x for x in need if x not in n]; assert not miss, miss; print(len(n), 'files')"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: wheel
+          path: dist/
+
+  github-release:
+    needs: wheel
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: wheel
+          path: dist/
+      - run: gh release upload "$GITHUB_REF_NAME" dist/*.whl --repo "$GITHUB_REPOSITORY" --clobber
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+  pypi:
+    needs: wheel
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/otui/
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: wheel
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1

@@ -1,0 +1,312 @@
+{
+ "otnyc": {
+  "label": "OTNYC",
+  "repo": "esma-ie/OTNYC",
+  "commit": "bc1d276cd3cb95908b3ec6dbb539c322d1bc6078",
+  "case": "s1_nyc_ref",
+  "run": "s1_nyc_ref.run",
+  "description": "Open TIMES New York City (ESMA, CC BY-SA 4.0, from US EPA COMET-NYC): 7 regions, 1,878 processes",
+  "files": {
+   "base.dd": {
+    "bytes": 4122627,
+    "sha256": "69066036bfea38d68d8c9cef81e0e391cd8d96c79e46d175a1be6d9aa1ba287a"
+   },
+   "gdr_ref.dd": {
+    "bytes": 743,
+    "sha256": "67ec427ec7954e68a3bc41f20511dedf0e9e87cf47c920cb75f51ff743de442f"
+   },
+   "ghg.dd": {
+    "bytes": 87367,
+    "sha256": "4430c71dcea743e2f3b1f4d4c2023d2d7fa5998bd781651157676922578b16d2"
+   },
+   "s1_nyc_ref.run": {
+    "bytes": 2332,
+    "sha256": "693c050efec3aa5563550fb7c41101bd50f9538043fa27e9ff1473b13d736c45"
+   },
+   "s1_nyc_ref_ts.dd": {
+    "bytes": 98,
+    "sha256": "3532c121d1d758a7a4a26002ce65dedd8ba67ae24ac3ea376989ec365166556d"
+   },
+   "syssettings.dd": {
+    "bytes": 284425,
+    "sha256": "effc6aa45f488bd79b5cb85796d5d3849b2f29d20755bfc9d9fd3f0e5bdfee99"
+   },
+   "techcom.dd": {
+    "bytes": 1190059,
+    "sha256": "8e86d4e41ae3ee8f3c00a0866d5290f4f81d4fdc487c249123da24577ba45085"
+   },
+   "techelc.dd": {
+    "bytes": 238653,
+    "sha256": "e3ba493cd68c0efe00ead353d656a216b5c8a0cb6f3536575e4d045809a79e2d"
+   },
+   "techh2g.dd": {
+    "bytes": 87893,
+    "sha256": "a7e94bc39ba6220d83c6a474ab76e33b2de25f628dfca56aab9b2dfab253bf43"
+   },
+   "technga.dd": {
+    "bytes": 9462,
+    "sha256": "ab498717c1c378d1ab5d3efe9391fa5dfe35c5d965b04e4cb4fa051500b0556a"
+   },
+   "techref.dd": {
+    "bytes": 3084,
+    "sha256": "2e7025edcba96656b4ac8601d0ffb461168b9468d86bfdbea759f44c70b642a5"
+   },
+   "techres.dd": {
+    "bytes": 835309,
+    "sha256": "8c13ca03416da1339ed02082263ccb6df1437c245974d6373f2bdf3bbf29e3d8"
+   },
+   "techtrnhdv.dd": {
+    "bytes": 3319783,
+    "sha256": "83136c67e7c2b7a3ccda42b706e2e250e7b1752785c160ccb65a302ce7e36e1b"
+   },
+   "techtrnldv.dd": {
+    "bytes": 1315807,
+    "sha256": "2cc230bf75e2c2d2278240ab7bcd6a57a6ad0f25de5cc12fb7a0da9ffe564465"
+   },
+   "tradeparam.dd": {
+    "bytes": 97,
+    "sha256": "275f4762b7e2039594158e855567da4f13e99e90931c73bec2c7cdde133d84ce"
+   },
+   "uc_coa.dd": {
+    "bytes": 1398931,
+    "sha256": "0427dfb9172239fa4d3bbf97a952961ad40f3e1579d74705834699ca3dc53939"
+   },
+   "uc_com.dd": {
+    "bytes": 622376,
+    "sha256": "f23fa41039e2a6c3396337e68efe5d8cc7511ace40c77e0621dd2b40daae495f"
+   },
+   "uc_elc.dd": {
+    "bytes": 293692,
+    "sha256": "4a8db80c18aff7f35efe937b3453e78eb6e52c853dcf2464551ac53ff4535663"
+   },
+   "uc_ind.dd": {
+    "bytes": 18882,
+    "sha256": "4d0f54f95db13364e865b52a92fabdbee9df751eed5c8a5e95b5b67ef11e59b5"
+   },
+   "uc_nga.dd": {
+    "bytes": 223512,
+    "sha256": "da246f7b6ee902e56bdaafe206ce67d27a994584b87f010488d2e4220ea0785c"
+   },
+   "uc_oil.dd": {
+    "bytes": 695470,
+    "sha256": "9ede16da53f57bf7f75365a33921d1c635c253153216e933552313be1798049a"
+   },
+   "uc_res.dd": {
+    "bytes": 885072,
+    "sha256": "d5b82afbf794663df45a625615d6fb27b5e61a2d37fa8f2863d57375c3e2e2bf"
+   },
+   "uc_trnhdv.dd": {
+    "bytes": 583366,
+    "sha256": "082382c9cf4dcf780ce4e4a3f75f32e926828c549d7482417534fa0607b9f7a0"
+   },
+   "uc_trnldv.dd": {
+    "bytes": 1559816,
+    "sha256": "abd1fd136173e1d5d3e209fd9a5cf7a1b5cdf8b2e9ea41cc88473aafcfc07f33"
+   }
+  }
+ },
+ "otcgen": {
+  "label": "OTCGEN",
+  "repo": "esma-ie/OTCGEN",
+  "commit": "08af95f13182a4a2d185bbcbd8758d12953d0c8c",
+  "case": "gc_ref",
+  "run": "gc_ref.run",
+  "description": "Open TIMES Generative COMET (ESMA, CC BY-SA 4.0, from US EPA Generative COMET): 2 regions, 6,769 processes",
+  "files": {
+   "base.dd": {
+    "bytes": 1029360,
+    "sha256": "676c0d02d3910fdfe4f9f2c23cb709f47ddf4d8bad3f1ae975f975f32aad1bb6"
+   },
+   "demand.dd": {
+    "bytes": 38485,
+    "sha256": "e014b96904f55934b1ee0cea11e161ac9c975217dea423a04a3b38f33de1bd06"
+   },
+   "gc_ref.run": {
+    "bytes": 2316,
+    "sha256": "794217a47473f4c15ba0bf78a743d8cc22558cf7ff19a62182877045305178af"
+   },
+   "gc_ref_ts.dd": {
+    "bytes": 98,
+    "sha256": "a0e0e428646d7f195859f8d7119423ef4558ab3cbc953c9109c2628e7ae04d51"
+   },
+   "gdr.dd": {
+    "bytes": 315,
+    "sha256": "a6e92bc4fccbbc224147bd895f56512a514dffe4c3004c805486777ffc33f098"
+   },
+   "ghg_ipcc.dd": {
+    "bytes": 1999864,
+    "sha256": "27e57b1d11aba8e53d17e46af3513ee3467158d4cda96a4c5fcee854837cd07f"
+   },
+   "growth_elc.dd": {
+    "bytes": 64839,
+    "sha256": "cd22a5b6993c8e8ff12a5445d47dab6373ee104efce7923aff763c5b56ab2d49"
+   },
+   "pollutants.dd": {
+    "bytes": 1165688,
+    "sha256": "ebfaa4af6d4c1f6b2a00b588444ce54724c959955a555a3ccb616df23923311c"
+   },
+   "syssettings.dd": {
+    "bytes": 154510,
+    "sha256": "80e77b709b98f6573b491430ea084d70a4dd45b13dd09b4a1d3c8f2d355e3d55"
+   },
+   "techcom.dd": {
+    "bytes": 2020647,
+    "sha256": "6179dc794e88d22d92199384beb8ad194be0fdb32e9c3dfac500132457faa0ae"
+   },
+   "techelc.dd": {
+    "bytes": 659826,
+    "sha256": "be6bfdb19d9911a2fdfe7c3cdb1ef5f48f680d1b0094f280e8d25ecbdd35db3a"
+   },
+   "techind.dd": {
+    "bytes": 9059,
+    "sha256": "a9c96e2e897aa4243fdcee9a770985084d7161243c0e809d8b5f39f3b9e8a1fb"
+   },
+   "techres.dd": {
+    "bytes": 2430859,
+    "sha256": "37c384287ebd9191ebea61b4da0c01a0312420bf64289d10c6e7a933c0f4a021"
+   },
+   "techret.dd": {
+    "bytes": 131175,
+    "sha256": "adabbe75c67f8161d6effa481f1bd36e685d160e144732189943ef70f8e9b9a4"
+   },
+   "techtra.dd": {
+    "bytes": 337735,
+    "sha256": "26ca5e016c0f03f23c693c866de6f5d86a637d4680754f241a206ec4f1a87b26"
+   },
+   "techwas.dd": {
+    "bytes": 57144,
+    "sha256": "3943b1611e85ecf333998cc6df9905428a69aeaedf240cb43c7fea52613e7b07"
+   },
+   "tradeparam.dd": {
+    "bytes": 1943,
+    "sha256": "471949d32efca2095c1a11c69919bed64d397a20ff97f2e5b09ea573cc3d12d2"
+   },
+   "uc_com.dd": {
+    "bytes": 47958,
+    "sha256": "318f93f999dd1299feeea75c5cbeec462da5ee5b3878ac4ee8186c08eb89b7d8"
+   },
+   "uc_ind.dd": {
+    "bytes": 11421,
+    "sha256": "5bd22940e630646a7be81d1f037a1807c0f0016b666a4172f5ac949027f4035b"
+   },
+   "uc_res.dd": {
+    "bytes": 505074,
+    "sha256": "783bfdee39a9164bead9aafa6c39a9fc0b2b29cc903e95f0bfebbfeea62de844"
+   },
+   "uc_tra.dd": {
+    "bytes": 56903,
+    "sha256": "f43d014d9bc3815dd1b8cf3f51f2cfaab677e94b4dac4ca0934520b521110705"
+   }
+  }
+ },
+ "otus9r": {
+  "label": "OTUS9r",
+  "repo": "esma-ie/OTUS9r",
+  "commit": "598e179f24c77ac29f80650fdb85abecb1f7690c",
+  "case": "reference",
+  "run": "reference.run",
+  "description": "Open TIMES US 9 regions (ESMA, CC BY-SA 4.0, from US EPA EPAUS9rT): 9 regions, 4,395 processes",
+  "files": {
+   "2080upd.dd": {
+    "bytes": 4277,
+    "sha256": "a53268b789995c209a911f53829498d76043b80303f9cc18cd895dc35776112c"
+   },
+   "aqreg.dd": {
+    "bytes": 1682,
+    "sha256": "d13aefb1d4fd701aac95d9a857bcc9953cbe7d056cb487d9a9d964b1f695aaca"
+   },
+   "base.dd": {
+    "bytes": 42550960,
+    "sha256": "75eea612345b71c973086106f282a98d8dbbf1377f317b1fe3fa631405ab8009"
+   },
+   "baseextra-offeps.dd": {
+    "bytes": 49419,
+    "sha256": "3ca279922f74c9db808131d0dc5ab9ed2a2f7ef8ee922ae10e907014c03d5289"
+   },
+   "bevcharging.dd": {
+    "bytes": 67335,
+    "sha256": "01900fd2457fa4b4d825d833607750b1bc021205bb10cce1f4eed0f48a2d8449"
+   },
+   "coalplants-ret-and_lifeext.dd": {
+    "bytes": 75051,
+    "sha256": "a1157f7a1f2d12978fa470fa20ced6aeaee635b4d2abc842bfb4d4bf4f76be8c"
+   },
+   "csapr-mats.dd": {
+    "bytes": 4817,
+    "sha256": "2bcf75cf58c33b6ecbf119eed8e0e88d623656a810f564ad796e4831971af98e"
+   },
+   "growthv2.dd": {
+    "bytes": 1853765,
+    "sha256": "25ddb8cf75a5d337be6ad1933b51399a6740708496d32f1ccf16062170aa536a"
+   },
+   "refemiupd-ts.dd": {
+    "bytes": 59684,
+    "sha256": "6f35d67711a0f37e34cdeff5eda6302ab85012db82b37c944e35d459d974f8b1"
+   },
+   "reference.run": {
+    "bytes": 2481,
+    "sha256": "9d974f3b7f3ba5600915de7fcb71e551562709a6a44308a555e88bd05e4bba31"
+   },
+   "reference_ts.dd": {
+    "bytes": 121,
+    "sha256": "77c307bad99e0ced3e579d3aab100912d0c634094c64c982c07f045425afc8a1"
+   },
+   "storage.dd": {
+    "bytes": 7358,
+    "sha256": "43a589ba93a42aaa8f620cadc3b50b5bb33cd7c3c7995ba2229e2cc2cd87bbdc"
+   },
+   "syssettings.dd": {
+    "bytes": 506788,
+    "sha256": "e08ad255b6185238d01941ac48651367db6eb3c3638fb4b6e2da9a23c1b9abfb"
+   },
+   "tradeparams.dd": {
+    "bytes": 32571,
+    "sha256": "3053d2c8b3b05f107bc424d69e42ffac0ae763e2f9877b24c3ce9126676ce38e"
+   },
+   "trnco2-ts.dd": {
+    "bytes": 85260,
+    "sha256": "493ebbc350a6ee96a34702a3e28ee88e268e3ad5f75acf131325f4fba7247a51"
+   },
+   "uc-biofuels20.dd": {
+    "bytes": 66905,
+    "sha256": "1a818e1a5e103a9a3ae5076db256c3085ba370037defab22a74525ff76415005"
+   },
+   "uc-csapr-mats.dd": {
+    "bytes": 20581,
+    "sha256": "dd93969b0e50425df5ac47d9cf12c064ff801a3586b068fbc888fea4da830d25"
+   },
+   "uc-elc20.dd": {
+    "bytes": 451955,
+    "sha256": "07c823bb253669ce76347beed09d3a10587eb885800f17e97a36d867ba7ca868"
+   },
+   "uc-ind20.dd": {
+    "bytes": 2689324,
+    "sha256": "14233b1441a3abad7d3f200d850ae2e5ec2381c2dad7ddfdc5457546b9bc7c0f"
+   },
+   "uc-nonewnuc.dd": {
+    "bytes": 10108,
+    "sha256": "e24f61c17bb9fcbc88cf4745559428beab39dedfefcb38572679e444ee04c3bd"
+   },
+   "uc-rescom20.dd": {
+    "bytes": 593349,
+    "sha256": "6bf6758f7f12147ba5aabe0431039356f45af8f5de12952118c81b91dfd1cb3e"
+   },
+   "uc-rps20.dd": {
+    "bytes": 402088,
+    "sha256": "f64e46331e5e1c6ae49009d69c7a59dffff73f50e8e64113604564582a90e37f"
+   },
+   "uc_aqreg.dd": {
+    "bytes": 15476,
+    "sha256": "22345d3885b95107121fbd39ad1560f43dffa2035c43824c1c3b7dd1dd2716d7"
+   },
+   "uc_trnhdv20_az121921.dd": {
+    "bytes": 422429,
+    "sha256": "68c9698d651502777184ace3419e122db46ab771620258c0d0dfc4ffab7d1673"
+   },
+   "uc_trnldv20.dd": {
+    "bytes": 1432874,
+    "sha256": "87c3586aecd4d633389b48f3217d4eb2b57140f9e97f0d054a8c4b2c6b4cd047"
+   }
+  }
+ }
+}
