@@ -11,6 +11,7 @@ Open an issue with:
 - your operating system, `otui --version`, and the output of `otui info`;
 - the model, if it is openly licensed. Please don't attach a model you may not
   share. A small openly licensed model that shows the same problem is ideal.
+- OTUI Issues listed: https://github.com/esma-ie/otui/issues
 
 If TIMES.jl reads or solves a model differently from GAMS TIMES, otui shows
 TIMES.jl's result as it is. Those reports belong to
