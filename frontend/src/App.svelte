@@ -349,8 +349,11 @@
   </main>
 
   <footer class="muted">
-    otui {health?.otui ?? ""} · AGPL-3.0-or-later (<a href="THIRD-PARTY-NOTICES.txt" target="_blank" rel="noopener"
-      >third-party notices</a
+    otui {health?.otui ?? ""} · AGPL-3.0-or-later (<a
+      href="https://github.com/esma-ie/otui"
+      target="_blank"
+      rel="noopener">source code</a
+    >, <a href="THIRD-PARTY-NOTICES.txt" target="_blank" rel="noopener">third-party notices</a
     >) · TIMES models are read and solved by TIMES.jl
     {#if timesjl}
       <span title={timesjl.fallback ?? ""}>

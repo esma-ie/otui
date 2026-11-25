@@ -209,6 +209,11 @@ npm run dev                # live reload on :5173, API proxied to otui serve
 GNU Affero General Public License v3.0 or later (AGPL-3.0-or-later): see
 [`LICENSES/AGPL-3.0-or-later.txt`](LICENSES/AGPL-3.0-or-later.txt) and
 [`REUSE.toml`](REUSE.toml). AGPL means anyone who runs a modified otui as a
-hosted service must also share its source.
+hosted service must also share its source. The app's footer links to the
+source code, so a modified copy keeps that link.
+
+The ESMA logo is not covered by the AGPL: it is ESMA's trademark, licensed
+only as set out in
+[`LICENSES/LicenseRef-ESMA-Trademark.txt`](LICENSES/LicenseRef-ESMA-Trademark.txt).
 
 © 2026 Energy Systems Modelling Analytics Ltd (ESMA).
